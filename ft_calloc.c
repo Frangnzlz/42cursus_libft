@@ -1,18 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/15 16:53:06 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/23 19:29:55 by frgonzal         ###   ########.fr       */
+/*   Created: 2026/09/23 19:03:14 by frgonzal          #+#    #+#             */
+/*   Updated: 2026/09/23 19:28:50 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-#define LIBFT_H
-#include <stdlib.h>
-size_t	ft_strlen(const char *src);
-void	ft_bzero(void *s, size_t n);
-#endif
+#include "libft.h"
+
+void	*ft_calloc(size_t nmemb, size_t size)
+{
+	void	*mem;
+
+	if (!nmemb || !size)
+		return (malloc(0));
+	if (nmemb > 0 && 2147483648 / nmemb < size)
+		return (NULL);
+	mem = malloc(nmemb * size);
+	if (!mem)
+		return (NULL);
+	ft_bzero(mem, nmemb * size);
+	return (mem);
+}
+

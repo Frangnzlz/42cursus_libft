@@ -1,18 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/15 16:53:06 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/23 19:29:55 by frgonzal         ###   ########.fr       */
+/*   Created: 2026/09/23 19:30:18 by frgonzal          #+#    #+#             */
+/*   Updated: 2026/09/23 19:43:28 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-#ifndef LIBFT_H
-#define LIBFT_H
-#include <stdlib.h>
-size_t	ft_strlen(const char *src);
-void	ft_bzero(void *s, size_t n);
-#endif
+char	*ft_strdup(const char *s)
+{
+	char	*dup;
+	int		i:
+
+	i = 0;
+	dup = malloc(sizeof(char) * ft_strlen(s));
+	if (!dup)
+		return (NULL);
+	while (src[i])
+	{
+		dup[i] = src[i];
+		i++;
+	}
+	dup[i] = '\0';
+	return (dup);
+}
