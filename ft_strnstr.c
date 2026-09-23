@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/22 20:42:36 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/22 21:18:55 by frgonzal         ###   ########.fr       */
+/*                                                       :::      ::::::::    */
+/*   ft_strnstr.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/09/22 20:42:36 by username         #+#    #+#              */
+/*   Updated: 2026/09/23 22:42:51 by username        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
 char	*strnstr(const char *big, const char *little, size_t len)
 {
-	size_t i;
-	size_t j;
+	size_t	i;
+	size_t	j;
 
 	j = 0;
 	i = 0;
@@ -22,7 +21,7 @@ char	*strnstr(const char *big, const char *little, size_t len)
 		return (big);
 	while (big[i] && little[j] && i + j < len)
 	{
-		while (big[i +j] == little[j] && little[j] && i + j < len)
+		while (big[i + j] == little[j] && little[j] && i + j < len)
 			j++;
 		if (!little[j] && big[i])
 			return (&big[i]);
@@ -30,4 +29,3 @@ char	*strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
