@@ -14,14 +14,14 @@
 static void ft_filljoin(char *dest, const char *src)
 {
 	size_t	i;
-	size_t	j:
+	size_t	j;
 	i = 0;
 	j = 0;
 	while (dest[j])
-		j++
+		j++;
 	while (src[i])
 	{
-		dest[start] = src[i];
+		dest[j] = src[i];
 		j++;
 		i++;
 	}
@@ -33,7 +33,7 @@ char *ft_strjoin(char const *s1, char const *s2)
 	char	*join;
 
 	length = ft_strlen(s1) + ft_strlen(s2);
-	join = ft_calloc(sizeof(char) * length);
+	join = ft_calloc(length, sizeof(char));
 	if (!join)
 		return (NULL);
 	ft_filljoin(join, s1);	

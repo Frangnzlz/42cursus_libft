@@ -14,10 +14,14 @@
 int	memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;
-
+	const char *new_s1;
+	const char *new_s2;
+	
+	new_s1 = (const char*) s1;
+	new_s2 = (const char*) s2;
 	i = 0;
-	while (i < n && s1[i] == s2[i])
+	while (i < n && new_s1[i] == new_s2[i])
 		i++;
-	return (s1[i] - s2[i]);
+	return (new_s1[i] - new_s2[i]);
 }
 
