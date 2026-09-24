@@ -6,18 +6,18 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 16:42:16 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/21 16:30:03 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/24 20:41:10 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t  i;
-	unsigned char *ns;
+	size_t			i;
+	unsigned char	*ns;
 
 	i = 0;
-	ns = (unsigned char*)s;
+	ns = (unsigned char *)s;
 	if (!ns)
 		return ;
 	while (i < n)

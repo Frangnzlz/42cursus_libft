@@ -6,11 +6,11 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 18:40:11 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/22 18:56:15 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/24 20:43:47 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c += 32;

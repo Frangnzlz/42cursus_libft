@@ -6,11 +6,11 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 18:40:11 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/22 18:41:53 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/24 20:43:28 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		c -= 32;

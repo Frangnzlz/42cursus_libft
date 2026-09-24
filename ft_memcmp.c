@@ -6,22 +6,21 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 20:11:42 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/22 20:31:35 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/24 20:45:53 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 int	memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
-	const char *new_s1;
-	const char *new_s2;
-	
-	new_s1 = (const char*) s1;
-	new_s2 = (const char*) s2;
+	size_t		i;
+	const char	*new_s1;
+	const char	*new_s2;
+
+	new_s1 = (const char *)s1;
+	new_s2 = (const char *)s2;
 	i = 0;
 	while (i < n && new_s1[i] == new_s2[i])
 		i++;
 	return (new_s1[i] - new_s2[i]);
 }
-

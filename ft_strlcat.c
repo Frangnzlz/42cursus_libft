@@ -6,7 +6,7 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 18:23:38 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/22 18:35:59 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/24 18:27:39 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		return (leng_src);
 	if (leng_dst >= size)
 		return (size + leng_src);
-	while (leng_dest + i < size - 1)
+	while (leng_dst + i < size - 1)
 	{
 		dst[leng_dst + i] = src[i];
 		i++;

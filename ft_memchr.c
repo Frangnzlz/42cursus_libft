@@ -6,7 +6,7 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 19:59:46 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/22 20:09:38 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/24 18:34:40 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -21,7 +21,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < n)
 	{
 		if (ns[i] == c)
-			return (&ns[i]);
+			return ((void *)&s[i]);
 		i++;
 	}
 	return (NULL);

@@ -6,7 +6,7 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 19:03:14 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/23 19:28:50 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/24 20:41:23 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(mem, nmemb * size);
 	return (mem);
 }
-

@@ -6,15 +6,15 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 18:44:07 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/22 19:24:27 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/24 20:44:43 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int i;
-	int last_index;
+	int	i;
+	int	last_index;
 
 	i = 0;
 	last_index = 0;
@@ -25,8 +25,8 @@ char	*ft_strrchr(const char *s, int c)
 		i++;
 	}
 	if (c == '\0')
-		return (&s[i]);
+		return ((char *)&s[i]);
 	if (!last_index)
 		return (NULL);
-	return (&s[last_index]);
+	return ((char *)&s[last_index]);
 }
