@@ -6,7 +6,7 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 18:41:00 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/25 22:01:15 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/25 22:04:09 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,28 +56,26 @@ static void ft_free_split(char **split)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	i;
 	char	**split;
 
 	split = malloc((ft_count_words(s, c) + 1) * sizeof(char *));
 	if (!split)
 		return (NULL);
-	i = 0;
 	while (*s)
 	{
 		if (*s == c)
 		{
-			split[i] = ft_substr(s, 1, ft_count_letters(s + 1, c));
-			if (!split[i])
+			*split = ft_substr(s, 1, ft_count_letters(s + 1, c));
+			if (!*split)
 			{
 				ft_free_split(split);
 				return (NULL);
 			}
-			i++;
+			split++;	
 		}
 		s++;
 	}
-	split[i] = NULL;
+	*split = NULL;
 	return (split);
 }
 
@@ -87,7 +85,6 @@ int main(int argc, char **argv)
 	int i = 0;
 	while (i < 3)
 	{
-		printf("Hola");
 		printf("%i : %s\n",i,  split[i]);
 		i++;
 	}
