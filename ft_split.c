@@ -6,7 +6,7 @@
 /*   By: frgonzal <frgonzal@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 18:41:00 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/27 19:10:13 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/27 23:47:27 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static size_t	ft_count_words(char const *s, char c)
 	count = 0;
 	while (s[i])
 	{
-		if (( !i && s[i] != c) || (s[i - 1] == c && s[i] != c))
+		if ((!i && s[i] != c) || (s[i - 1] == c && s[i] != c))
 			count++;
 		i++;
 	}

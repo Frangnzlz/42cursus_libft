@@ -6,7 +6,7 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/26 21:36:05 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/27 19:17:58 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/27 23:46:49 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static size_t	ft_number_digits(long n)
 {
-	size_t numb;
+	size_t	numb;
 
 	numb = !n;
 	if (n < 0)
@@ -30,12 +30,11 @@ static size_t	ft_number_digits(long n)
 	return (numb);
 }
 
-
 char	*ft_itoa(int n)
 {
-	char *n_ascii;
-	long n_long;
-	size_t size;
+	char	*n_ascii;
+	long	n_long;
+	size_t	size;
 
 	size = ft_number_digits(n);
 	n_ascii = ft_calloc(size + 1, sizeof(char));
@@ -56,7 +55,7 @@ char	*ft_itoa(int n)
 }
 
 /*
-int main(void)
+int	main(void)
 {
 	printf("0 : %s\n", ft_itoa(0));
 	printf("42 : %s\n", ft_itoa(42));

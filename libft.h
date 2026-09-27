@@ -6,13 +6,14 @@
 /*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/09/15 16:53:06 by username         #+#    #+#              */
-/*   Updated: 2026/09/24 18:54:37 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/27 23:44:26 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
+# include <unistd.h>
 
 typedef struct s_list
 {

@@ -6,16 +6,16 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/27 19:20:39 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/27 19:31:50 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/27 23:44:36 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t i;
-	char *new_s;	
+	size_t	i;
+	char	*new_s;
 
 	i = ft_strlen(s);
 	new_s = ft_calloc(i + 1, sizeof(char));
