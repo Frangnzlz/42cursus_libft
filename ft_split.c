@@ -6,7 +6,7 @@
 /*   By: frgonzal <frgonzal@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 18:41:00 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/28 15:41:23 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/28 20:18:36 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ static size_t	ft_count_words(char const *s, char c)
 	count = 0;
 	while (s[i])
 	{
-		if ((!i && s[i] != c) || (s[i - 1] == c && s[i] != c))
-			count++;
+		if ((!i && s[i] != c) || ((i && s[i - 1] == c) && s[i] != c))
+			count++; 
 		i++;
 	}
 	return (count);
@@ -62,7 +62,7 @@ int	ft_fill_words(char **split, char const *s, char c)
 	j = 0;
 	while (s[j])
 	{
-		if ((!j && s[j] != c) || (s[j] != c && s[j - 1] == c))
+		if ((!j && s[j] != c) || (s[j] != c && (j && s[j - 1] == c)))
 		{
 			split[i] = ft_substr(&s[j], 0, ft_count_letters(&s[j], c));
 			if (!split[i])
