@@ -6,7 +6,7 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 18:44:07 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/24 20:46:50 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/28 18:48:19 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -18,7 +18,7 @@ char	*ft_strchr(const char *s, int c)
 	i = 0;
 	while (s[i])
 	{
-		if (s[i] == c)
+		if (s[i] == (const unsigned char)c)
 			return ((char *)&s[i]);
 		i++;
 	}
