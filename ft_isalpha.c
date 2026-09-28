@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
+/*   By: frgonzal <frgonzal@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/14 15:57:12 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/14 16:00:28 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/28 15:45:51 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 int	ft_isalpha(char c)
 {

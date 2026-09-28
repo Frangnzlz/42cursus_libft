@@ -6,7 +6,7 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/27 23:46:24 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/27 23:46:41 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/28 16:24:43 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	ft_is_space(char c)
 {
-	if (c == ' ' || c == '\f' || c == '\n' || c == '\n' || c == '\t'
+	if (c == ' ' || c == '\f' || c == '\r' || c == '\n' || c == '\t'
 		|| c == '\v')
 		return (1);
 	return (0);

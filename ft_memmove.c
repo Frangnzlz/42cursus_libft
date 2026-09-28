@@ -6,12 +6,12 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 17:21:37 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/24 20:44:53 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/28 15:50:27 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void	*memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t				i;
 	unsigned char		*ndest;

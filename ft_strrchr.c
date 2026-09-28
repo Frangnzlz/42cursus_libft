@@ -6,7 +6,7 @@
 /*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 18:44:07 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/24 20:44:43 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/28 16:12:27 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -26,7 +26,7 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	if (c == '\0')
 		return ((char *)&s[i]);
-	if (!last_index)
+	if (!last_index && s[last_index] != c)
 		return (NULL);
 	return ((char *)&s[last_index]);
 }

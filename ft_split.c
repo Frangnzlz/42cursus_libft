@@ -6,12 +6,11 @@
 /*   By: frgonzal <frgonzal@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 18:41:00 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/27 23:47:27 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/28 15:41:23 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static size_t	ft_count_words(char const *s, char c)
 {

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
+/*   By: frgonzal <frgonzal@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 18:40:11 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/24 20:43:47 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/28 15:47:10 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
