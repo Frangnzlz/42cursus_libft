@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: frgonzal <frgonzal@student.42malaga.c      +#+  +:+       +#+        */
+/*   By: frgonzal <frgonzal@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/23 19:03:14 by frgonzal          #+#    #+#             */
-/*   Updated: 2026/09/25 18:18:36 by frgonzal         ###   ########.fr       */
+/*   Updated: 2026/09/29 15:24:48 by frgonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	if (!nmemb || !size)
 		return (malloc(0));
-	if (nmemb > 0 && 2147483648 / nmemb < size)
+	if (nmemb > 0 && (size_t)-1 / nmemb < size)
 		return (NULL);
 	mem = malloc(nmemb * size);
 	if (!mem)
